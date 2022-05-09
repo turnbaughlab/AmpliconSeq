@@ -41,7 +41,7 @@ suppressMessages(suppressWarnings(tracking<-read_excel(opt$tracking, col_names =
 
 amps<-
   amps %>%
-  select(-X1) %>%
+  select(-(c(1))) %>%
   gather(-Cycle, key="Well", value="RFU")
 
 line<-grep(paste0("Extraction and Indexing Plate ", opt$plateid, " of 6"), tracking[,1]$...1)
