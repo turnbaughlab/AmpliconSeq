@@ -96,6 +96,11 @@ SampleSheet<-
   Sys.getenv("SampleSheet") %>%
   read_csv(., skip=19)
 
+## Check for sample IDs with underscores
+if(any(grepl("_", SampleSheet$Sample_ID))){
+  stop("Sample IDs with underscores are modified to dashes by Illumina in the fastq files. Please check that the sample IDs in your sample sheet file match the IDs in your fastq files.")
+}
+
 fastqs<-
   Sys.getenv("ReadDir") %>%
   list.files(., recursive = TRUE, full.names = TRUE, pattern="\\.fastq\\.gz") %>%
@@ -155,6 +160,14 @@ if(Sys.getenv("GolayCorrect")=="true" & !file.exists("Logs/Nreads_golay.txt")){
       tibble(ReadID=.) %>%
       mutate(Barcode=str_sub(ReadID, -25)) %>%
       separate(Barcode, c("i7","i5"), sep="\\+")
+
+   if(nrow(filter(barcodes, !is.na(i5))) == 0){
+	warning("No valid barcodes found, skipping Golay decoding")
+        break
+   }
+    if(any(nchar(barcodes$i5[1:10]) != 12) | any(nchar(barcodes$i7[1:10]) != 12)){
+      warning("Barcodes do not appear to be 12bp Golay-compatible barcodes. Skipping Golay decoding.")
+    }
     
     i7_cor<-barcodes %>% 
       pull(i7) %>% 
