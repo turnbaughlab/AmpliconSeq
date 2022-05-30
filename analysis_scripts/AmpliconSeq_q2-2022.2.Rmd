@@ -332,7 +332,7 @@ fi
 In this step, the reads are being scanned for the presence of the primary PCR primers. In this sequencing strategy, the primers are sequenced so a valid read will start with a primer. We are only keeping sequences which contain a valid primer seq with no more than 3 errors in 20bp (--p-error-rate 0.15).
 
 ```{bash primertrim}
-if $TRIMADAPTERS; then
+if [ "$TrimAdapters" == "true" ]; then
 echo $(date) Trimming adapters
   qiime cutadapt trim-paired \
     --i-demultiplexed-sequences $PWD/Intermediates/Reads.qza \
