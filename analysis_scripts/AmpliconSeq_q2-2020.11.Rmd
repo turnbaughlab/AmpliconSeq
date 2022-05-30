@@ -98,7 +98,7 @@ SampleSheet<-
 
 ## Check for sample IDs with underscores
 if(any(grepl("_", SampleSheet$Sample_ID))){
-  stop("Sample IDs with underscores are modified to dashes by Illumina in the fastq files. Please check that the sample IDs in your sample sheet file match the IDs in your fastq files.")
+  warning("Sample IDs with underscores may be modified to dashes by Illumina in the fastq files. Please check that the sample IDs in your sample sheet file match the IDs in your fastq files.")
 }
 
 fastqs<-
