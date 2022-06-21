@@ -114,6 +114,10 @@ fastqs<-
 
 SampleSheet<-SampleSheet %>% left_join(fastqs)
 
+if(sum(is.na(SampleSheet$Forward_Read)) > 0){
+ stop("Forward read file is missing for at least one sample - check that file paths are correct and that the Suffix parameter is set correctly for your fastq files")
+}
+
 SampleSheet<-SampleSheet %>% mutate(Nreads_illumina=countFastq(Forward_Read)$records)
 
 write_csv(SampleSheet, "Logs/Nreads_raw.txt")
