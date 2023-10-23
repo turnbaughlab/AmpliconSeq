@@ -18,7 +18,7 @@ Another advantage of this amplification strategy is that you can mix and match 1
 - [ ] Optically clear Plate Seals (Biorad Microseal ‘B’ #MSB1001)
 - [ ] DMSO for PCR (Sigma D8418-50mL)
 - [ ] SYBR Green I (Sigma S9430 - 10,000x stock) - diluted 10x in DMSO to 1000x
-- [ ] KAPA HiFi Hot Start PCR kit (KAPA KK2502) - **order your own. may need to order 2 depending on number of samples to cover indexing reactions**
+- [ ] E7630L Library Quant Kit for Illumina (E7630L) - **order your own. 500 rxns each. may need to order 2 depending on number of samples to cover indexing reactions**
 - [ ] PCR primers of choice at 100µM (see Table 1)
 - [ ] Nuclease-free H2O (Life Tech 0977-023)
 
@@ -72,14 +72,14 @@ ITS4_Nextera | ITS | ITS2 | GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGTCCTCCGCTTATTGATAT
 **Table 2. Primary PCR Master Mix**
 Component	| 1 Rxn (µL) | 420 Rxns (µL) 
 ----------|------------|--------------
-Nuclease-free H2O	| 5.2055 | 2186.31
+Nuclease-free H2O	| 5.2955 | 2224.11
 5x KAPA HiFi Buffer	| 1.8	| 756
 10 mM dNTPs	| 0.27 |	113.4
 DMSO	| 0.45	| 189
 1000x SYBR Green	| 0.0045	| 1.89
 100 µM Forward Primer	| 0.045	| 18.9
 100 µM Reverse Primer	| 0.045	| 18.9
-KAPA HiFi polymerase	| 0.18	| 75.6
+Taq polymerase	| 0.09	| 37.8
 Template | 1.0 | 420
 **Total**	| **9.0**	| **3780.0**
 
