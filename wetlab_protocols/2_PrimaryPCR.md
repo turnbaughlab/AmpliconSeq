@@ -18,7 +18,7 @@ Another advantage of this amplification strategy is that you can mix and match 1
 - [ ] Optically clear Plate Seals (Biorad Microseal ‘B’ #MSB1001)
 - [ ] DMSO for PCR (Sigma D8418-50mL)
 - [ ] SYBR Green I (Sigma S9430 - 10,000x stock) - diluted 10x in DMSO to 1000x
-- [ ] E7630L Library Quant Kit for Illumina (E7630L) - **order your own. 500 rxns each. may need to order 2 depending on number of samples to cover indexing reactions**
+- [ ] Thermo Scientific Phusion High-Fidelity PCR Kit (F553L) - **order your own. 500 20 ul rxns or 200 50 ul rxns each. may need to order 2 depending on number of samples to cover indexing reactions**
 - [ ] PCR primers of choice at 100µM (see Table 1)
 - [ ] Nuclease-free H2O (Life Tech 0977-023)
 
@@ -79,7 +79,7 @@ DMSO	| 0.45	| 189
 1000x SYBR Green	| 0.0045	| 1.89
 100 µM Forward Primer	| 0.045	| 18.9
 100 µM Reverse Primer	| 0.045	| 18.9
-Taq polymerase	| 0.09	| 37.8
+Polymerase	| 0.09	| 37.8
 Template | 1.0 | 420
 **Total**	| **9.0**	| **3780.0**
 
