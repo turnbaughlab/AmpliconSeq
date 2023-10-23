@@ -17,7 +17,7 @@ The most important output is the WellsForIndexing.csv file which needs to be cop
 # Materials
 - [ ] 96 Well Plates (USA Sci #1402-9200)
 - [ ] DMSO for PCR (Sigma D8418-50mL)
-- [ ] NEB PCR kit (NEB E7630L) - **order your own**
+- [ ] Themo Scientific Phusion High-Fidelity PCR Kit (F553L) - **order your own**
 - [ ] Indexing Primer plate (Pick 1 of 6 for each plate to be sequenced without overlapping).
 - [ ] Nuclease-free H2O (Life Tech 0977-023)
 - [ ] Opentrons OT-2 with gen2 20ul multichannel and 20ul single channel.
@@ -43,7 +43,7 @@ Component	| 1 Rxn (20µL rxn) | 110 Rxns
 5x KAPA HiFi Buffer	| 4.2 | 462
 10 mM dNTPs | 0.6 | 66
 DMSO | 1.0 | 110
-Taq polymerase | 0.2 | 22
+Polymerase | 0.2 | 22
 **Total**	| **6.0** | **660**
 
 ## Table 2. Indexing Amplification Parameters
